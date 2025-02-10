@@ -17,15 +17,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Giới thiệu", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Liên hệ", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                </ul>
-                 @Html.Partial("_LoginPartial")
+                @{
+                    Html.RenderAction("MenuLists", "DanhMucSanPhams_23TH0004");
+                }
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="">
         @RenderBody()
         <hr />
         <footer>

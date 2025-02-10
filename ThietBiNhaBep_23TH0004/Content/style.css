@@ -1,4 +1,7 @@
-﻿.primary-color {
+﻿img{
+    max-width:100%;
+}
+.primary-color {
     color: rgb(155 5 5)
 }
 .primary-background{
@@ -7,3 +10,34 @@
 #loginForm .btn {
     color: #fff;
 }
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+    .product .item {
+        border: #f3ecec 1px solid;
+        margin-top: 15px;
+    }
+.col-content {
+    padding: 5px 10px;
+}
+.old-price {
+    text-decoration: line-through;
+}
+.banner-title {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 200px;
+    background-image: url('/Content/img/banner.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .banner-title .title {
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+    }

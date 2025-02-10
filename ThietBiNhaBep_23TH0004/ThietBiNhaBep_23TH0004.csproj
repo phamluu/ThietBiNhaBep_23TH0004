@@ -171,8 +171,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DanhMucSanPhams_23TH0004Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Menus_23TH0004Controller.cs" />
+    <Compile Include="Controllers\SanPhams_23TH0004Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -292,6 +295,7 @@
     <Content Include="Models\Model_23TH0004.edmx.diagram">
       <DependentUpon>Model_23TH0004.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\img\banner.webp" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -337,9 +341,25 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\DanhMucSanPhams_23TH0004\Create.cshtml" />
+    <Content Include="Views\DanhMucSanPhams_23TH0004\Delete.cshtml" />
+    <Content Include="Views\DanhMucSanPhams_23TH0004\Details.cshtml" />
+    <Content Include="Views\DanhMucSanPhams_23TH0004\Edit.cshtml" />
+    <Content Include="Views\DanhMucSanPhams_23TH0004\Index.cshtml" />
+    <Content Include="Views\DanhMucSanPhams_23TH0004\MenuLists.cshtml" />
+    <Content Include="Views\SanPhams_23TH0004\Create.cshtml" />
+    <Content Include="Views\SanPhams_23TH0004\Delete.cshtml" />
+    <Content Include="Views\SanPhams_23TH0004\Details.cshtml" />
+    <Content Include="Views\SanPhams_23TH0004\Edit.cshtml" />
+    <Content Include="Views\SanPhams_23TH0004\Index.cshtml" />
+    <Content Include="Views\SanPhams_23TH0004\List.cshtml" />
+    <Content Include="Views\SanPhams_23TH0004\_Item.cshtml" />
+    <Content Include="Views\SanPhams_23TH0004\_PartialList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Upload\" />
+    <Folder Include="Views\Menus_23TH0004\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

@@ -1,0 +1,13 @@
+﻿@model IEnumerable<ThietBiNhaBep_23TH0004.Models.DanhMucSanPham>
+@{ 
+    Layout = "";
+}
+@if (Model != null && Model.Count() > 0)
+{
+    <ul class="navbar-nav flex-grow-1">
+        @foreach (var item in Model)
+        {
+            <li>@Html.ActionLink(item.TenDanhMuc, "List", "SanPhams_23TH0004", new { CategoryId = item.MaDanhMuc }, new { @class = "nav-link" })</li>
+        }
+    </ul>
+}
