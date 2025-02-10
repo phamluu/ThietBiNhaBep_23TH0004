@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6bccdfacbe1847d9903370c96d13ac54" Name="Diagram1">
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.AspNetRole" Width="1.5" PointX="8.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.AspNetUserClaim" Width="1.5" PointX="13.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.AspNetUserLogin" Width="1.5" PointX="13.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.AspNetUser" Width="1.5" PointX="11" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.Banner" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.ChiTietDonHang" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.ChiTietGioHang" Width="1.5" PointX="8.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.ChiTietPhieuNhapKho" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.DanhMucSanPham" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.DonHang" Width="1.5" PointX="3" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.GioHang" Width="1.5" PointX="6" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.HangSanPham" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.PhieuNhapKho" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.Quyen" Width="1.5" PointX="1.5" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.SanPham" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.TaiKhoan" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThietBiNhaBep_23TH0004Model.Voucher" Width="1.5" PointX="0.75" PointY="18.75" IsExpanded="true" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__ChiTietDo__MaDon__6B24EA82" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__ChiTietDo__MaSan__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__ChiTietGi__MaGio__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__ChiTietGi__MaSan__6E01572D" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__ChiTietPh__MaPhi__6EF57B66" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK_ChiTietPhieuNhapKho_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__SanPham__MaDanhM__73BA3083" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__DonHang__MaTaiKh__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__DonHang__MaVouch__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__GioHang__MaTaiKh__72C60C4A" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__SanPham__MaHang__74AE54BC" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.FK__TaiKhoan__MaQuye__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="ThietBiNhaBep_23TH0004Model.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

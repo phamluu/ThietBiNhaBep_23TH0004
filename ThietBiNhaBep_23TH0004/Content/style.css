@@ -1,0 +1,9 @@
+﻿.primary-color {
+    color: rgb(155 5 5)
+}
+.primary-background{
+   background: rgb(155 5 5)
+}
+#loginForm .btn {
+    color: #fff;
+}

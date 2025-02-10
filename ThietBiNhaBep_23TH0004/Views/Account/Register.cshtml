@@ -1,0 +1,42 @@
+﻿@model ThietBiNhaBep_23TH0004.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Đăng ký tài khoản";
+}
+
+<main aria-labelledby="title" style="max-width:500px; margin:0 auto;">
+    <h2 id="title" class="primary-color">@ViewBag.Title.</h2>
+
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <hr />
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+        <div class="row mt-2">
+            @Html.LabelFor(m => m.Email, new { @class = "col-md-3 col-form-label" })
+            <div class="col-md-9">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row mt-2">
+            @Html.LabelFor(m => m.Password, "Mật khẩu", new { @class = "col-md-3 col-form-label" })
+            <div class="col-md-9">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row mt-2">
+            @Html.LabelFor(m => m.ConfirmPassword, "Xác nhận mật khẩu", new { @class = "col-md-3 col-form-label" })
+            <div class="col-md-9">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="offset-md-3 col-md-9">
+                <input type="submit" value="Đăng ký" class="btn btn-outline-dark primary-background text-white" />
+            </div>
+        </div>
+    }
+</main>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
