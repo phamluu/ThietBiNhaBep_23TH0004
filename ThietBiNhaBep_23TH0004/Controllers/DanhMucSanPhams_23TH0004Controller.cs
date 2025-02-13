@@ -21,13 +21,13 @@ namespace ThietBiNhaBep_23TH0004.Controllers
         }
         #endregion
 
-        // GET: DanhMucSanPhams_23TH0024
+        [Authorize(Roles = "admin")]
         public ActionResult Index()
         {
             return View(db.DanhMucSanPhams.ToList());
         }
 
-        // GET: DanhMucSanPhams_23TH0024/Details/5
+        [Authorize(Roles = "admin")]
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -42,15 +42,13 @@ namespace ThietBiNhaBep_23TH0004.Controllers
             return View(danhMucSanPham);
         }
 
-        // GET: DanhMucSanPhams_23TH0024/Create
+        [Authorize(Roles = "admin")]
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: DanhMucSanPhams_23TH0024/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "MaDanhMuc,TenDanhMuc,TrangThai,NgayTao")] DanhMucSanPham danhMucSanPham)
@@ -65,7 +63,7 @@ namespace ThietBiNhaBep_23TH0004.Controllers
             return View(danhMucSanPham);
         }
 
-        // GET: DanhMucSanPhams_23TH0024/Edit/5
+        [Authorize(Roles = "admin")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -80,9 +78,7 @@ namespace ThietBiNhaBep_23TH0004.Controllers
             return View(danhMucSanPham);
         }
 
-        // POST: DanhMucSanPhams_23TH0024/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "MaDanhMuc,TenDanhMuc,TrangThai,NgayTao")] DanhMucSanPham danhMucSanPham)
@@ -96,7 +92,7 @@ namespace ThietBiNhaBep_23TH0004.Controllers
             return View(danhMucSanPham);
         }
 
-        // GET: DanhMucSanPhams_23TH0024/Delete/5
+        [Authorize(Roles = "admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -111,7 +107,7 @@ namespace ThietBiNhaBep_23TH0004.Controllers
             return View(danhMucSanPham);
         }
 
-        // POST: DanhMucSanPhams_23TH0024/Delete/5
+        [Authorize(Roles = "admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
@@ -122,6 +118,7 @@ namespace ThietBiNhaBep_23TH0004.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "admin")]
         protected override void Dispose(bool disposing)
         {
             if (disposing)
