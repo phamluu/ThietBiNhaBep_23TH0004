@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace ThietBiNhaBep_23TH0004.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class Dashboard_23TH0004Controller : Controller
     {
         // GET: Dashboard_23TH0004

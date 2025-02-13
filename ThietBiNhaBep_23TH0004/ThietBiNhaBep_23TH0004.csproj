@@ -172,7 +172,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DanhMucSanPhams_23TH0004Controller.cs" />
-    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\Dashboard_23TH0004Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -363,7 +362,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Upload\" />
-    <Folder Include="Views\Dashboard\" />
     <Folder Include="Views\Menus_23TH0004\" />
   </ItemGroup>
   <ItemGroup>
